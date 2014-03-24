@@ -27,3 +27,45 @@ Route::get('/sayhello/{name}', function($name)
         return "Hello, $name!";
     }
 });
+
+Route::get('/sayhello/{site}', function($site)
+{
+    if ($name == "site")
+    {
+        return "This is my resume";
+    }
+    else if ($name == "portfolio")
+    {
+        return "Hello, $name!";
+    }
+});
+
+Route::get('/sayhello/{name}', function($name)
+{
+	$data = array(
+			'name' => $name
+		);
+    //return View::make('first_view')->with('name', $name);
+     return View::make('first_view')->with($data);
+});
+
+
+Route::get('/rolldice/{guess?}', function($guess = null)
+{
+	
+    $ran_num = rand(1, 6);
+	$data = array('ran_num'=>$ran_num, 'guess'=>$guess);
+
+    return View::make('rolldice')->with($data);
+
+});
+
+// Route::get('/rolldice', function()
+// {
+// 	$ran_num = rand(1, 6);
+
+//     return View::make('rolldice')->with('ran_num', $ran_num);
+// });
+
+
+
