@@ -16,6 +16,26 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+Route::get('/resume', function()
+{
+	return View::make('resume');
+});
+
+Route::get('/portfolio', function()
+{
+	return View::make('portfolio');
+});
+
+Route::get('/home', function()
+{
+	return View::make('home');
+});
+
+Route::get('/blog', function()
+{
+	return View::make('blog');
+});
+
 Route::get('/sayhello/{name}', function($name)
 {
     if ($name == "Chris")
@@ -24,7 +44,7 @@ Route::get('/sayhello/{name}', function($name)
     }
     else
     {
-        return "Hello, $name!";
+        return "Hello, $name?";
     }
 });
 
@@ -36,7 +56,7 @@ Route::get('/sayhello/{site}', function($site)
     }
     else if ($name == "portfolio")
     {
-        return "Hello, $name!";
+        return "Hello, $name";
     }
 });
 
@@ -52,7 +72,7 @@ Route::get('/sayhello/{name}', function($name)
 
 Route::get('/rolldice/{guess?}', function($guess = null)
 {
-	
+
     $ran_num = rand(1, 6);
 	$data = array('ran_num'=>$ran_num, 'guess'=>$guess);
 
