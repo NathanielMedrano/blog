@@ -8,40 +8,43 @@
 
      <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <style type="text/css">
+    <link rel="stylesheet" type="text/css" href="/css/blog_css.css">
 
-    .head {
-      position: relative;
-      top: 50px;
-    }
+    @yield('sty')
+   
+</head>
 
+<body id='img'>
 
-    </style>
-  </head>
-  <body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	     <a class="navbar-brand" href="home">Nats Tech Blog</a>
+	    </div>
+	    <div class="collapse navbar-collapse">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="home">Home</a></li>
+	        <li><a href="blog">Blog</a></li>
+	        <li><a href="http://blog.dev/portfolio">Portfolio</a></li>
+	        <li><a href="resume">Resum&eacute;</a></li>
+	      </ul>
+	    </div><!--/.nav-collapse -->
+	  </div>
+	</div>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-     <a class="navbar-brand" href="home">Nats Tech Blog</a>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="home">Home</a></li>
-        <li><a href="blog">Blog</a></li>
-        <li><a href="http://blog.dev/portfolio">Portfolio</a></li>
-        <li><a href="resume">Resum&eacute</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</div>
 
 <div class="head">
+  
+  @section('image')
+  <div >
+  	<img id='pic' src="/img/natspic.jpg">
+  </div>
+  @show
   
   <div class="text-center">
     <h1>Nat's Tech Blog</h1>

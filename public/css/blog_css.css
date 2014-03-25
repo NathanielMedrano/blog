@@ -1,0 +1,38 @@
+
+#pic {
+
+	-webkit-box-shadow: -24px 17px 37px -3px rgba(0,0,0,0.54);
+	-moz-box-shadow: -24px 17px 37px -3px rgba(0,0,0,0.54);
+	box-shadow: -24px 17px 37px -3px rgba(0,0,0,0.54);
+
+}
+
+.head {
+      position: relative;
+      top: 70px;
+    }
+
+
+	#pic {
+-webkit-box-shadow: 28px 12px 47px 21px rgba(0,0,0,0.63);
+-moz-box-shadow: 28px 12px 47px 21px rgba(0,0,0,0.63);
+box-shadow: 28px 12px 47px 21px rgba(0,0,0,0.63);
+		-moz-border-radius: 10px 10px 10px 10px;
+		-webkit-border-radius: 10px 10px 10px 10px;
+		border: 0px solid #000000;
+		  display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+
+	}
+
+	#img {
+
+		background:url(/img/bot.JPG);
+		background-repeat:no-repeat;
+		background-size: 110% 150%;
+		background-attachment: fixed;
+		text-align: center
+
+	}
+
