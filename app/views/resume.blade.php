@@ -30,7 +30,7 @@
 
 	.col-md-4 {
 
-		position: relative;
+		/*position: relative;*/
 
 	}
 
@@ -46,10 +46,11 @@
   </div>
 
   <div class="row" align="center">
-  <div class="col-md-4" align="right">
-    <p><strong>Contact:</strong></p>
-    
+  <div class="col-md-4" align="center">
+    <p><strong>Contact:</strong></p> 
   </div>
+
+
   <div class="col-md-4" >
 
     <p>Nathaniel Medrano</p>
@@ -63,7 +64,7 @@
 
 
   </div>
-  <div class="col-md-4" align="left">
+  <div class="col-md-4" align="center">
 
   <p><a href="https://github.com/NathanielMedrano"> <i class="fa fa-github"></i> Github</a></p>
   <p><a href="http://www.linkedin.com/in/nathanielmedrano/"> <i class="fa fa-linkedin"></i> LinkedIn</a></p>
@@ -76,21 +77,21 @@
   </div>
   <hr>
 
-   <div class="row" align="right">
+   <div class="row" align="center">
   <div class="col-md-4"><strong>Work Experience:</strong></div>
   <div class="col-md-4" align="center">
     <p>Intern: <a href="http://netamericaalliance.com/">Net America Alliance</a></p>
     <p>Front Desk: <a href="http://stric.com/">South Texas Radiology Imaging Center</a></p>
 
   </div>
-  <div class="col-md-4" align="left">
+  <div class="col-md-4" align="center">
     <p>May 2013-November 2013</p>
     <p>July 2009 - March 2012</p>
   </div>
   </div>
   <hr>
 
-   <div class="row" align="right">
+   <div class="row" align="center">
   <div class="col-md-4"><strong>Education:</strong></div>
   <div class="col-md-4" align="center">
     <p><a href="http://www.codeup.com/">Codeup</a></p>
@@ -98,7 +99,7 @@
     <p><a href="http://www.nisd.net/healthcareers/">Health Careers HS</a></p>
 
   </div>
-  <div class="col-md-4" align="left">
+  <div class="col-md-4" align="center">
     <p>Graduating in Spring 2014</p>
     <p>Pre-Nursing Courses 2010-2012</p>
     <p>Graduated May 2010</p>
