@@ -14,9 +14,9 @@
 
 
 	#pic {
--webkit-box-shadow: 28px 12px 47px 21px rgba(0,0,0,0.63);
--moz-box-shadow: 28px 12px 47px 21px rgba(0,0,0,0.63);
-box-shadow: 28px 12px 47px 21px rgba(0,0,0,0.63);
+		-webkit-box-shadow: 28px 12px 47px 21px rgba(0,0,0,0.63);
+		-moz-box-shadow: 28px 12px 47px 21px rgba(0,0,0,0.63);
+		box-shadow: 28px 12px 47px 21px rgba(0,0,0,0.63);
 		-moz-border-radius: 10px 10px 10px 10px;
 		-webkit-border-radius: 10px 10px 10px 10px;
 		border: 0px solid #000000;
@@ -30,7 +30,7 @@ box-shadow: 28px 12px 47px 21px rgba(0,0,0,0.63);
 
 		background:url(/img/bot.JPG);
 		background-repeat:no-repeat;
-		background-size: 110% 150%;
+		background-size: 105% 125%;
 		background-attachment: fixed;
 		text-align: center
 

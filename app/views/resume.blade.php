@@ -22,12 +22,24 @@
 
 	}
 
+	#font {
+
+		font-size: 15px;
+
+	}
+
+	.col-md-4 {
+
+		position: relative;
+
+	}
+
 	</style>
 
 	@section('image')
 	@stop
     @section('content')
-
+<div id='font' >
    <div id='head'>
     <h1>Nathaniel Medrano</h1>
     <p class="lead">Web Developer</p>
@@ -92,7 +104,7 @@
     <p>Graduated May 2010</p>
   </div>
   </div>
-  
+</div>  
 
 
     @stop
