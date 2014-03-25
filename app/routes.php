@@ -17,6 +17,8 @@ Route::get('/resume', 'HomeController@showResume');
 
 Route::get('/home', 'HomeController@showHome');
 
+Route::get('/', 'HomeController@showHome');
+
 Route::get('/blog', 'HomeController@showBlog');
 
 Route::resource('posts', 'PostsController');
@@ -26,4 +28,5 @@ Route::resource('posts', 'PostsController');
 // {
 // 	return View::make('home');
 // });
+
 

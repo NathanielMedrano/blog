@@ -10,7 +10,13 @@ class PostsController extends \BaseController {
 	public function index()
 
 	{
-		return "Show a lists of all posts.";
+		Log::info('This is some useful information.');
+
+		Log::warning('Something could be wrong.');
+
+		Log::error('Something is really wrong.');
+
+		return "Show a list of all posts.";		
 	}
 	/**
 	 * Show the form for creating a new resource.
@@ -31,6 +37,12 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
+
+		Log::info('This is some useful information.');
+
+		Log::warning('Something could be going wrong.');
+
+		Log::error('Something is really going wrong.');
 		return Redirect::back()->withInput();
 	}
 
