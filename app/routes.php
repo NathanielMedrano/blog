@@ -19,3 +19,11 @@ Route::get('/home', 'HomeController@showHome');
 
 Route::get('/blog', 'HomeController@showBlog');
 
+Route::resource('posts', 'PostsController');
+
+
+// Route::get('/home', function()
+// {
+// 	return View::make('home');
+// });
+
