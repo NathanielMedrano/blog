@@ -23,6 +23,10 @@ Route::get('/blog', 'HomeController@showBlog');
 
 Route::resource('posts', 'PostsController');
 
+Route::get('orm-test', function () {
+ $post = Post::find(1);
+$post->delete();
+});
 
 // Route::get('/home', function()
 // {

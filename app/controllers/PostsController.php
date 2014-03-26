@@ -10,13 +10,15 @@ class PostsController extends \BaseController {
 	public function index()
 
 	{
-		Log::info('This is some useful information.');
+		$posts = Post::all();
+		return $posts;
+		// Log::info('This is some useful information.');
 
-		Log::warning('Something could be wrong.');
+		// Log::warning('Something could be wrong.');
 
-		Log::error('Something is really wrong.');
+		// Log::error('Something is really wrong.');
 
-		return "Show a list of all posts.";		
+		// return "Show a list of all posts.";		
 	}
 	/**
 	 * Show the form for creating a new resource.
@@ -54,8 +56,8 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		return "Show the id.";
-	}
+		$post = Post::find(1);
+return $post;
 
 	/**
 	 * Show the form for editing the specified resource.
