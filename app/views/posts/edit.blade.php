@@ -49,7 +49,7 @@
 	</div>
 
 	<div class="col-sm-8 contact-form">
-		{{ Form::open(array('action' => 'PostsController@store', 'class' => 'col-xs-6 col-md-6')) }}
+		{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'put', 'class' => 'col-xs-6 col-md-6')) }}
 			<div class="row">
 					<!-- {{ Form::label('title', 'Title', array('class' => 'col-sm-2 control-label'))}} -->
 				<div class="col-xs-6 col-md-6 form-group">

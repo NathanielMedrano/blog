@@ -3,26 +3,23 @@
 $section('sty')
 
 <style type="text/css">
-.text-center {
-
-	display: none;
-
+	.row {
+		
 	}
-
 </style>
 
-	@section('image')
-	@stop
+
 
 @section('content')
-    <h1>List Posts</h1>
 
     @foreach ($posts as $post)
+<div class="row">
     <p>
     	<a href="{{{ action('PostsController@show' , $post->id) }}} ">{{{ $post->title }}}</a>
     	<p>{{{$post->body}}}</p>
     	<p>{{{$post->created_at }}}</p>
     </p>
+</div>
 @endforeach
-	<p>'Hello this is a test'</p>
+	
 @stop

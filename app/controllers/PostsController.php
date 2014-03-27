@@ -65,7 +65,7 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$post = Post::find($id);
+		$post = Post::findOrFail($id);
 		return View::make('posts.show')->with(array('post' => $post));
 	}
 	/**
@@ -75,8 +75,10 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function edit($id)
-	{
-		return "Edit a form";
+	{	
+		$post = Post::findOrFail($id);
+		return View::make('posts.edit')->with('post', $post);
+
 	}
 
 	/**
@@ -86,8 +88,28 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function update($id)
-	{
-		return "Update a form.";
+	{	
+		$post = Post::findOrFail($id);
+			// create the validator
+	    $validator = Validator::make(Input::all(), Post::$rules);
+
+	    // attempt validation
+	    if ($validator->fails())
+	    {
+	         return Redirect::back()->withInput()->withErrors($validator);
+	    }
+	    else
+	    {
+	        // validation succeeded, create and save the post
+
+		//Save to DB
+		$post->title = Input::get('title');
+		$post->body = Input::get('body');
+		$post->save();
+
+		return Redirect::action('PostsController@index');
+	    
+	    }
 	}
 
 	/**
