@@ -11,14 +11,8 @@ class PostsController extends \BaseController {
 
 	{
 		$posts = Post::all();
-		return $posts;
-		// Log::info('This is some useful information.');
-
-		// Log::warning('Something could be wrong.');
-
-		// Log::error('Something is really wrong.');
-
-		// return "Show a list of all posts.";		
+		return View::make('posts.index')->with(array('posts' => $posts));
+	
 	}
 	/**
 	 * Show the form for creating a new resource.
@@ -40,12 +34,27 @@ class PostsController extends \BaseController {
 	public function store()
 	{
 
-		Log::info('This is some useful information.');
+			// create the validator
+	    $validator = Validator::make(Input::all(), Post::$rules);
 
-		Log::warning('Something could be going wrong.');
+	    // attempt validation
+	    if ($validator->fails())
+	    {
+	         return Redirect::back()->withInput()->withErrors($validator);
+	    }
+	    else
+	    {
+	        // validation succeeded, create and save the post
 
-		Log::error('Something is really going wrong.');
-		return Redirect::back()->withInput();
+		//Save to DB
+		$post1 = new Post();
+		$post1->title = Input::get('title');
+		$post1->body = Input::get('body');
+		$post1->save();
+
+		return Redirect::action('PostsController@index');
+	    
+	    }
 	}
 
 	/**
@@ -56,9 +65,9 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$post = Post::find(1);
-return $post;
-
+		$post = Post::find($id);
+		return View::make('posts.show')->with(array('post' => $post));
+	}
 	/**
 	 * Show the form for editing the specified resource.
 	 *

@@ -37,7 +37,7 @@ class HomeController extends BaseController {
 
 	public function showBlog()
 	{
-		return View::make('blog');
+		return Redirect::action('posts.index');
 	}
 
 }
