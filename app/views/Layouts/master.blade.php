@@ -26,7 +26,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	     <a class="navbar-brand" href="home">Nats Tech Blog</a>
+	     <a class="navbar-brand" href="{{{ action('HomeController@showHome') }}}">Nats Tech Blog</a>
 	    </div>
 	    <div class="collapse navbar-collapse">
 	      <ul class="nav navbar-nav">
@@ -34,6 +34,7 @@
 	        <li><a href="{{{ action('HomeController@showBlog') }}}">Blog</a></li>
 	        <li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
 	        <li><a href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
+          <li><a href="{{{ action('HomeController@showNewBlog') }}}">New Blog Posting</a></li>
 	      </ul>
 	    </div><!--/.nav-collapse -->
 	  </div>
@@ -58,5 +59,6 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     @yield('content')
+    @yield('btm-script')
   </body>
 </html>

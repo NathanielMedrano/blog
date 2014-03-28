@@ -13,6 +13,8 @@
 
 Route::get('/portfolio', 'HomeController@showPortfolio');
 
+Route::get('/create', 'HomeController@showNewBlog');
+
 Route::get('/resume', 'HomeController@showResume');
 
 Route::get('/home', 'HomeController@showHome');
@@ -24,13 +26,10 @@ Route::get('/blog', 'HomeController@showBlog');
 Route::resource('posts', 'PostsController');
 
 Route::get('orm-test', function () {
- $post = Post::find(1);
-$post->delete();
+ 	$post = Post::find(1);
+	$post->delete();
+
 });
 
-// Route::get('/home', function()
-// {
-// 	return View::make('home');
-// });
 
 

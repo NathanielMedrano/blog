@@ -4,7 +4,8 @@ $section('sty')
 
 <style type="text/css">
 	.row {
-		
+		margin-top: 8%;
+
 	}
 </style>
 

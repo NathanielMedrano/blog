@@ -40,4 +40,9 @@ class HomeController extends BaseController {
 		return Redirect::action('posts.index');
 	}
 
+	public function showNewBlog()
+	{
+		return Redirect::action('posts.create');
+	}
+
 }

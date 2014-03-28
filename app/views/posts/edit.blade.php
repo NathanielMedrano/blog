@@ -69,12 +69,10 @@
 				<button class="btn btn-primary pull-right" type="submit">Submit</button>
 			</div>
 		</div>	
-			{{ Form::close() }}
 	</div>
+			{{ Form::close() }}
 
-	
-
+	@stop
 
 	</div>
     
-    @stop
