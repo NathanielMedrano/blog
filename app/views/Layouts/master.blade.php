@@ -7,6 +7,7 @@
     <title>NatsTech - Home</title>
 
      <!-- Latest compiled and minified CSS -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/blog_css.css">
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -58,7 +59,22 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    @if (Session::has('successMessage'))
+    <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
+    @endif
+    @if (Session::has('errorMessage'))
+        <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
+    @endif
     @yield('content')
     @yield('btm-script')
+
+  <footer>
+    <p>©NatsTechBlog 
+    <a href="https://github.com/NathanielMedrano"> <i class="fa fa-github"></i></a>
+      <a href="http://www.linkedin.com/in/nathanielmedrano/"> <i class="fa fa-linkedin"></i> </a>
+      <a href="http://instagram.com/natmed91"> <i class="fa fa-instagram"></i></a>
+      <a href="https://twitter.com/ndmedrano"> <i class="fa fa-twitter"></i></a>
+    </p>
+  </footer  
   </body>
 </html>

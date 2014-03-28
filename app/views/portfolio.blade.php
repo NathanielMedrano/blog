@@ -76,7 +76,8 @@
 					<div class="caption">
 						<h3>Natstech.me</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
-						<p><a href="#" class="btn btn-primary" role="button">Code</a> <a href="#" class="btn btn-default" role="button">Site</a></p>
+						<p><a href="https://github.com/NathanielMedrano/blog" class="btn btn-primary" role="button">Code</a> 
+						   <a href="{{{ action('HomeController@showHome') }}}" class="btn btn-default" role="button">Site</a></p>
 					</div>
 				</div>
 			</div>

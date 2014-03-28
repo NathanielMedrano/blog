@@ -60,7 +60,7 @@
 			</div>
 			<!-- {{ Form::label('body', 'Body', array('class' => 'col-sm-2 control-label'))}} -->
 		<div>
-			{{Form::text('body', null, array('class' => 'form-control', 'placeholder' => 'body'))}}
+			{{Form::textarea('body', null, array('class' => 'form-control', 'placeholder' => 'body'))}}
 			{{ $errors->has('body') ? $errors->first('body', '<p><span class="help-block">:message</span></p>') : '' }}
 		</div>
 		<br>

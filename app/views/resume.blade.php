@@ -1,7 +1,6 @@
 @extends('layouts.master')
 
 	@section('sty')
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<style type="text/css">
 	
 	#pic {

@@ -40,7 +40,8 @@ class PostsController extends \BaseController {
 
 	    // attempt validation
 	    if ($validator->fails())
-	    {
+	    {	
+	    	Session::flash('errorMessage', 'Post was NOT created successfully');
 	         return Redirect::back()->withInput()->withErrors($validator);
 	    }
 	    else
@@ -52,7 +53,7 @@ class PostsController extends \BaseController {
 		$post1->title = Input::get('title');
 		$post1->body = Input::get('body');
 		$post1->save();
-
+		//Session::flash('successMessage', 'Post created successfully');
 		return Redirect::action('PostsController@index');
 	    
 	    }
@@ -97,7 +98,8 @@ class PostsController extends \BaseController {
 	    // attempt validation
 	    if ($validator->fails())
 	    {
-	         return Redirect::back()->withInput()->withErrors($validator);
+	    	Session::flash('errorMessage', 'Post was NOT updated successfully');
+	        return Redirect::back()->withInput()->withErrors($validator);
 	    }
 	    else
 	    {
