@@ -11,9 +11,11 @@ $section('sty')
 	}
 
 #head {
-		margin-top: 8%;
+		 margin-left: 20%;
+    	 margin-right: 20%;
 
 	}
+
 </style>
 
 	@section('image')
@@ -22,11 +24,27 @@ $section('sty')
 @section('content')
     <h1 class='head'>{{{ $post->title }}}</h1>
 
-    <p class='head'>
-    	{{{ $post->body }}}
-    </p>
-<a href="#" id='btnDeletePost' class='head'>Delete</a>
+   
+
+    <section class="section head" id="themes">
+	<div class="container center" id='head'>
+
+		<div class="col-sm-4 col-sm-offset-2">
+			<div class="thumbnail">
+		
+				<div class="caption" >
+						
+						 <p>
+    					{{{ $post->body }}}
+    					</p>						
+	<a href="#" id='btnDeletePost' class='head'>Delete</a>
 	<a href="{{{ action('PostsController@edit', $post->id ) }}}" class='btn head'>Edit</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 	{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}
 	{{ Form::close() }}
