@@ -17,6 +17,7 @@
    
 </head>
 
+
 <body id='img'>
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
