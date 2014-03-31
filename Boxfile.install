@@ -1,2 +1,2 @@
-  db1:
-	type: mysql
+db1:
+  type: mysql
