@@ -12,9 +12,14 @@ class CreatePostsTable extends Migration {
 	 */
 	public function up()
 	{
-		//
+	     Schema::create('posts', function($table)
+        {
+            $table->increments('id');
+            $table->string('title', 100);
+            $table->text('body');
+            $table->timestamps();
+        });
 	}
-
 	/**
 	 * Reverse the migrations.
 	 *
