@@ -74,7 +74,7 @@ class PostsController extends \BaseController {
 		$post1 = new Post();
 		$post1->title = Input::get('title');
 		$post1->body = Input::get('body');
-		$post1->user_id = Input::get('user_id');
+		$post1->user_id = Auth::user()->id;
 		$post1->save();
 		//Session::flash('successMessage', 'Post created successfully');
 		return Redirect::action('PostsController@index');
