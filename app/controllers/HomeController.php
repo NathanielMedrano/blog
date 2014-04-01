@@ -45,4 +45,29 @@ class HomeController extends BaseController {
 		return Redirect::action('posts.create');
 	}
 
+		public function showLogin()
+	{
+		return View::make('Login');
+	}
+
+	public function doLogin()
+	{	
+		//$pw = Hash::make(Input::get('password'));
+		if (Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password'))))
+		{
+		    return Redirect::intended('/posts');
+		}
+		else
+		{
+		    // login failed, go back to the login screen
+		    return Redirect::back()->withInput();
+		}
+	}
+
+		public function logout()
+	{
+		Auth::logout();
+		return Redirect::action('PostsController@index');
+	}
+
 }

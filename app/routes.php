@@ -31,6 +31,12 @@ Route::get('/blog', 'HomeController@showBlog');
 
 Route::resource('posts', 'PostsController');
 
+Route::get('/login', 'HomeController@showLogin');
+
+Route::post('/login', 'HomeController@doLogin');
+
+Route::get('/logout', 'HomeController@logout');
+
 Route::get('orm-test', function () {
  	$post = Post::find(1);
 	$post->delete();

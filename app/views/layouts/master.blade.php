@@ -37,6 +37,11 @@
 	        <li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
 	        <li><a href="{{{ action('HomeController@showResume') }}}">Resum&eacute;</a></li>
           <li><a href="{{{ action('HomeController@showNewBlog') }}}">New Blog Posting</a></li>
+          @if (Auth::check())
+          <li><a href="{{{ action('HomeController@logout') }}}">Logout ({{{ Auth::user()->email}}})</a></li>
+          @else
+          <li><a href="{{{ action('HomeController@showLogin') }}}">Login</a></li>
+          @endif
 	      </ul>
 	    </div><!--/.nav-collapse -->
 	  </div>
