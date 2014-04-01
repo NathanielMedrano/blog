@@ -19,9 +19,21 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 
-	{
-		//$posts->orderBy('created_at');
-		$posts = Post::orderBy('created_at', 'desc')->paginate(5);
+	{	//$posts = Post::with('user')->paginate(4);
+		$search = Input::get('search');
+		$query = Post::orderBy('created_at', 'desc')->with('user');
+		if (is_null($search)) 
+		{
+	
+		$posts = $query->paginate(5);
+		//return View::make('posts.index')->with(array('posts' => $posts));
+		}	else {
+		$posts = $query->where('title', 'LIKE', "{$search}")
+					   ->orWhere('body', 'LIKE', "{$search}")
+					   ->paginate(5);
+		$post = Post::find(1);
+		
+		}
 		return View::make('posts.index')->with(array('posts' => $posts));
 	
 	}
@@ -62,6 +74,7 @@ class PostsController extends \BaseController {
 		$post1 = new Post();
 		$post1->title = Input::get('title');
 		$post1->body = Input::get('body');
+		$post1->user_id = Input::get('user_id');
 		$post1->save();
 		//Session::flash('successMessage', 'Post created successfully');
 		return Redirect::action('PostsController@index');

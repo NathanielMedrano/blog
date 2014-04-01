@@ -24,8 +24,6 @@ $section('sty')
 @section('content')
     <h1 class='head'>{{{ $post->title }}}</h1>
 
-   
-
     <section class="section head" id="themes">
 	<div class="container center" id='head'>
 
