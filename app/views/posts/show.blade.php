@@ -1,6 +1,5 @@
 @extends('layouts.master')
 
-
 $section('sty')
 
 <style type="text/css">
@@ -32,9 +31,11 @@ $section('sty')
 		
 				<div class="caption" >
 						
-						 <p>
+					 <p>
     					{{{ $post->body }}}
-    					</p>						
+    				 </p>			
+    				 <img src="/img/{{{ $post->img_name }}}">
+    				 <p> {{{ Auth::user()->email}}}</p>
 	<a href="#" id='btnDeletePost' class='head'>Delete</a>
 	<a href="{{{ action('PostsController@edit', $post->id ) }}}" class='btn head'>Edit</a>
 				</div>

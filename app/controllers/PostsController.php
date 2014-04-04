@@ -66,19 +66,40 @@ class PostsController extends \BaseController {
 	    	Session::flash('errorMessage', 'Post was NOT created successfully');
 	         return Redirect::back()->withInput()->withErrors($validator);
 	    }
-	    else
+	    elseif (is_null(Input::file('image')))
 	    {
 	        // validation succeeded, create and save the post
 
 		//Save to DB
+		
 		$post1 = new Post();
 		$post1->title = Input::get('title');
 		$post1->body = Input::get('body');
 		$post1->user_id = Auth::user()->id;
 		$post1->save();
+		
 		//Session::flash('successMessage', 'Post created successfully');
 		return Redirect::action('PostsController@index');
 	    
+	    }	
+	    else
+	    {
+
+	    //Use uniqid and getOriginalExt to stop multiple insertions with identical names
+	    $file = Input::file('image');
+		$destinationPath = 'img/';
+		$filename = $file->getClientOriginalName();
+		Input::file('image')->move($destinationPath, $filename);
+
+		$post1 = new Post();
+		$post1->title = Input::get('title');
+		$post1->body = Input::get('body');
+		$post1->user_id = Auth::user()->id;
+		$post1->img_name = $filename;
+		$post1->save();
+		
+		//Session::flash('successMessage', 'Post created successfully');
+		return Redirect::action('PostsController@index');	
 	    }
 	}
 
@@ -150,5 +171,6 @@ class PostsController extends \BaseController {
 		$post->delete();
 		return Redirect::action('PostsController@index');
 	}
+
 }
 

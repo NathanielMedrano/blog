@@ -49,7 +49,9 @@
 	</div>
 
 	<div class="col-sm-8 contact-form">
-		{{ Form::open(array('action' => 'PostsController@store', 'class' => 'col-xs-6 col-md-6')) }}
+	 
+
+		{{ Form::open(array('action' => 'PostsController@store', 'class' => 'col-xs-6 col-md-6', 'files'=> true)) }}
 			<div class="row">
 					<!-- {{ Form::label('title', 'Title', array('class' => 'col-sm-2 control-label'))}} -->
 				<div class="col-xs-6 col-md-6 form-group">
@@ -62,6 +64,9 @@
 		<div>
 			{{Form::textarea('body', null, array('class' => 'form-control', 'placeholder' => 'body'))}}
 			{{ $errors->has('body') ? $errors->first('body', '<p><span class="help-block">:message</span></p>') : '' }}
+		</div>
+		<div>
+			{{ Form::file('image') }}
 		</div>
 		<br>
 		<div class="row">

@@ -30,10 +30,15 @@
 
   }
 
+  #logform {
+     float: none;
+    margin: 0 auto;
+  }
+
   </style>
 
     @section('content')
-
+    <div class="col-xs-6 col-md-4" id="logform">
 {{ Form::open(array('action' => 'HomeController@doLogin', 'class' => 'form-signin')) }}
     
         <h2 class="form-signin-heading">Please sign in</h2>
@@ -45,6 +50,6 @@
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
 
 {{ Form::close() }}      
-
+  </div>
     
     @stop

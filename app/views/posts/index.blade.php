@@ -45,6 +45,6 @@ $section('sty')
 @endforeach
 {{ $posts->appends(array('search' => Input::get('search')))->links() }}
     
-{{ $posts->links() }}
+
 
 @stop

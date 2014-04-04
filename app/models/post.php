@@ -13,9 +13,9 @@ class Post extends BaseModel {
     //Validation Rules
 
     public static $rules = array(
-    'title'      => 'required|max:100',
-    'body'       => 'required|max:10000'
-);
+        'title'      => 'required|max:100',
+        'body'       => 'required|max:10000'
+    );
 
     public function GetCreatedAttribute($value)
     {
@@ -23,5 +23,10 @@ class Post extends BaseModel {
         return $utc->setTimezone('America/Chicago');
     }
     
+    public static function PostHome()
+    {
+        // $_this = new self;
+        return self::orderBy('created_at', 'desc')->first();
+    }
 
 }

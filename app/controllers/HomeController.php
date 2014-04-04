@@ -30,7 +30,8 @@ class HomeController extends BaseController {
 
 	public function showHome()
 	{
-		return View::make('home');
+		$post = Post::PostHome();
+		return View::make('home')->with(array('post' => $post));
 	}
 
 
