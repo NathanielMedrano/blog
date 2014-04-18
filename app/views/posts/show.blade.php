@@ -14,6 +14,19 @@ $section('sty')
     	 margin-right: 20%;
 
 	}
+	.post-img {
+    width: 200px;
+    height: 120px;
+}
+
+/* resize images */
+.post-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 20%;
+    	 margin-right: 20%;
+
+}
 
 </style>
 
@@ -33,9 +46,11 @@ $section('sty')
 						
 					 <p>
     					{{{ $post->body }}}
-    				 </p>			
+    				 </p>	
+    				 <div class="post-img">		
     				 <img src="/img/{{{ $post->img_name }}}">
-    				 <p> {{{ Auth::user()->email}}}</p>
+    				</div>
+    				
 	<a href="#" id='btnDeletePost' class='head'>Delete</a>
 	<a href="{{{ action('PostsController@edit', $post->id ) }}}" class='btn head'>Edit</a>
 				</div>

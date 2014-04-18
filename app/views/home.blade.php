@@ -12,7 +12,7 @@
 		  #logform {
      float: none;
     margin: 0 auto;
-    top: 15%;
+    top: 12%;
   }
 	</style>
 
