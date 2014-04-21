@@ -42,40 +42,36 @@
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-2">
 				<div class="thumbnail">
-					<img src="assets/screenshots/sshot1.jpg" alt="">
 					<div class="caption">
-						<h3>legendarylinens.com</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
-						<p><a href="#" class="btn btn-primary" role="button">Code</a> <a href="#" class="btn btn-default" role="button">Site</a></p>
+						<h3>getitred.com</h3>
+						<p>Geo-Caching Site and App that gives you "warmer" and "colder" hints as you search.</p>
+						<p><a href="https://github.com/Hot-N-Seek/capstone" class="btn btn-primary" role="button">Code</a> <a href="http://getitred.com/" class="btn btn-default" role="button">Site</a></p>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<div class="thumbnail">
-					<img src="assets/screenshots/sshot4.jpg" alt="">
 					<div class="caption">
 						<h3>kiethlimon.me</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
-						<p><a href="#" class="btn btn-primary" role="button">Code</a> <a href="#" class="btn btn-default" role="button">Site</a></p>
+						<p>Current Project for a local San Antonio artist. Laravel project that will be a blog and gallery.</p>
+						<p><a href="https://github.com/NathanielMedrano/limon.dev" class="btn btn-primary" role="button">Code</a> <a href="#" class="btn btn-default" role="button">Site</a></p>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-4 col-sm-offset-2">
 				<div class="thumbnail">
-					<img src="assets/screenshots/sshot5.jpg" alt="">
 					<div class="caption">
 						<h3>home-builder.com</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p></p>
 						<p><a href="#" class="btn btn-primary" role="button">Code</a> <a href="#" class="btn btn-default" role="button">Site</a></p>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<div class="thumbnail">
-					<img src="assets/screenshots/sshot3.jpg" alt="">
 					<div class="caption">
 						<h3>Natstech.me</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p>My personal blog site that you are currently viewing.</p>
 						<p><a href="https://github.com/NathanielMedrano/blog" class="btn btn-primary" role="button">Code</a> 
 						   <a href="{{{ action('HomeController@showHome') }}}" class="btn btn-default" role="button">Site</a></p>
 					</div>
