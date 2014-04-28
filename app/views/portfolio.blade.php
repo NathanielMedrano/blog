@@ -61,8 +61,8 @@
 			<div class="col-sm-4 col-sm-offset-2">
 				<div class="thumbnail">
 					<div class="caption">
-						<h3>home-builder.com</h3>
-						<p></p>
+						<h3>xs.dev</h3>
+						<p>Website for construction company Tech Stars INC.</p>
 						<p><a href="#" class="btn btn-primary" role="button">Code</a> <a href="#" class="btn btn-default" role="button">Site</a></p>
 					</div>
 				</div>

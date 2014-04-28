@@ -15,10 +15,7 @@ $section('sty')
 
 </style>
 
-
-
 @section('content')
-
 
     <div id='search' class="col-sm-8 contact-form">
         {{ Form::open(array('action' => 'PostsController@index', 'class' => 'col-xs-6 col-md-6', 'method' => 'get')) }}
