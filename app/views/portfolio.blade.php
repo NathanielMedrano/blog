@@ -42,7 +42,7 @@
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-2">
 				<div class="thumbnail">
-					<img src="/img/p1.jpg">
+					<img src="/img/red.jpg">
 					<div class="caption">
 						<h3>getitred.com</h3>
 						<p>Geo-Caching Site and App that gives you "warmer" and "colder" hints as you search.</p>
@@ -52,7 +52,7 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="thumbnail">
-					<img src="/img/p1.jpg">
+					<img src="/img/limon.jpg">
 					<div class="caption">
 						<h3>kiethlimon.me</h3>
 						<p>Current Project for a local San Antonio artist. Laravel project that will be a blog and gallery.</p>
@@ -62,7 +62,7 @@
 			</div>
 			<div class="col-sm-4 col-sm-offset-2">
 				<div class="thumbnail">
-					<img src="/img/p1.jpg">
+					<img src="/img/xs.jpg">
 					<div class="caption">
 						<h3>xs.dev</h3>
 						<p>Website for construction company Tech Stars INC.</p>
@@ -72,7 +72,7 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="thumbnail">
-					<img src="/img/p1.jpg">
+					<img src="/img/nat.jpg">
 					<div class="caption">
 						<h3>Natstech.me</h3>
 						<p>My personal blog site that you are currently viewing.</p>
