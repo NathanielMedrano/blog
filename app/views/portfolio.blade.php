@@ -77,7 +77,7 @@
 						<h3>Whack-A-Plumber!</h3>
 						<p>JavaScript Game</p>
 						<p><a href="https://github.com/NathanielMedrano/codeup.dev/blob/master/public/whack.html" class="btn btn-primary" role="button">Code</a> 
-						   <a href="{{{ action('HomeController@showHello') }}}" class="btn btn-default" role="button">Site</a></p>
+						   <a href="" class="btn btn-default" role="button">Site</a></p>
 					</div>
 				</div>
 			</div>
