@@ -26,23 +26,23 @@
 <button id='pa' type="button" class="btn-primary btn-default">Play Again!</button>
 
 <div class='mar-pipe' id='marONE' >
-	<img class='mar-img' src="img/mario.png" alt="Ellusive Mario" height="7%" width="7%"> 
+	<img class='mar-img' src="/img/mario.png" alt="Ellusive Mario" height="7%" width="7%"> 
 </div>
 
 <div class='mar-pipe' id='marTWO' >
-	<img class='mar-img' src="img/mario.png" alt="Ellusive Mario" height="6%" width="6%">
+	<img class='mar-img' src="/img/mario.png" alt="Ellusive Mario" height="6%" width="6%">
 </div>
 
 <div class='mar-pipe' id='marTHREE' >
-	<img class='mar-img' src="img/mario.png" alt="Ellusive Mario" height="7%" width="7%">
+	<img class='mar-img' src="/img/mario.png" alt="Ellusive Mario" height="7%" width="7%">
 </div>
 
 <div class='mar-pipe' id='marFOUR' >
-	<img class='mar-img' src="img/mario.png" alt="Ellusive Mario" height="15%" width="15%">
+	<img class='mar-img' src="/img/mario.png" alt="Ellusive Mario" height="15%" width="15%">
 </div>
 
 <div class='mar-pipe' id='marFIVE' >
-	<img class='mar-img' src="img/mario.png" alt="Ellusive Mario" height="40%" width="40%">
+	<img class='mar-img' src="/img/mario.png" alt="Ellusive Mario" height="40%" width="40%">
 </div>
 
 
