@@ -1,0 +1,72 @@
+
+	h1	{
+
+		font-size:300%;
+		font-weight:bold;
+
+	}
+
+	h2 {
+
+		font-size:300%;
+		font-weight:bold;
+		display: none;
+
+	}
+
+	#pa {
+
+		display: none;
+
+	}
+
+	.img {
+		
+		cursor: url(/img/hammer.png), auto;
+		background:url(/img/pipeline.jpg);
+		background-repeat:no-repeat;
+		background-size: 110% 150%;
+		background-attachment: fixed;
+		text-align: center
+
+	}
+
+	
+
+	.mar-pipe {
+
+		/*cursor: url(/img/hammer.png), pointer;*/
+		position:absolute;
+
+		}
+
+	.mar-img {
+
+		display: none;
+
+	}
+
+	#marONE {
+		left: -14%;
+		bottom: 78%;
+	}
+
+	#marTWO {
+		left: -57%;
+		bottom: 25%;
+	}
+	
+	#marTHREE {
+		left: -19%;
+		bottom: 32%;
+	}
+
+	#marFOUR {
+		left: 35%;
+		bottom: 35%;
+	}
+
+	#marFIVE {
+		left: 80%;
+		bottom: 25%;
+	}

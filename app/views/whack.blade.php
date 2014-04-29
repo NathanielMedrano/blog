@@ -7,8 +7,8 @@
  
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="css/animations.css">
-	<link rel="stylesheet" type="text/css" href="css/whack.css">
+	<link rel="stylesheet" href="/css/animations.css">
+	<link rel="stylesheet" type="text/css" href="/css/whack.css">
 
 	<script src="/js/jquery.js"></script>
 
