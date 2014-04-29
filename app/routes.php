@@ -37,6 +37,8 @@ Route::post('/login', 'HomeController@doLogin');
 
 Route::get('/logout', 'HomeController@logout');
 
+Route::get('/whack', 'HomeController@whack');
+
 
 Route::get('orm-test', function () {
  	$post = Post::find(1);

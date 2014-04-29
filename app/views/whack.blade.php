@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Whack-A-Plumber!</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+ 
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" type="text/css" href="css/whack.css">
+
+	<script src="/js/jquery.js"></script>
+
+</head>
+<body class='img'>
+
+<h1 id="animated-example" class="bigEntrance">The Fastest Plumber</h1>
+
+<button id='bttn' type="button" class="btn-primary btn-default">Play Game!</button>
+
+
+
+<h2></h2>
+<h3></h3>
+<button id='pa' type="button" class="btn-primary btn-default">Play Again!</button>
+
+<div class='mar-pipe' id='marONE' >
+	<img class='mar-img' src="img/mario.png" alt="Ellusive Mario" height="7%" width="7%"> 
+</div>
+
+<div class='mar-pipe' id='marTWO' >
+	<img class='mar-img' src="img/mario.png" alt="Ellusive Mario" height="6%" width="6%">
+</div>
+
+<div class='mar-pipe' id='marTHREE' >
+	<img class='mar-img' src="img/mario.png" alt="Ellusive Mario" height="7%" width="7%">
+</div>
+
+<div class='mar-pipe' id='marFOUR' >
+	<img class='mar-img' src="img/mario.png" alt="Ellusive Mario" height="15%" width="15%">
+</div>
+
+<div class='mar-pipe' id='marFIVE' >
+	<img class='mar-img' src="img/mario.png" alt="Ellusive Mario" height="40%" width="40%">
+</div>
+
+
+<script>
+
+	var score = 0;
+	var game;
+	var counter;
+
+	var playGame = function() {
+
+		score = 0;
+		counter = 20;
+		$('#bttn').hide();
+		$('#pa').hide();
+		$('#h3').hide();
+		$('#animated-example').fadeOut();
+		$('h2').fadeIn();
+		var pipe = $('.mar-pipe');
+
+		game = setInterval(function() {
+
+			$('.mar-pipe').children().fadeOut();
+			var rand = Math.floor(Math.random() * pipe.length);
+
+			$(pipe[rand]).children().slideUp();
+			$('h3').html("Time Left: " + counter--);
+
+			if (counter <= 0) {
+				clearInterval(game);
+				$("h2").html("Good Game!");	
+				$("h3").html("Final Score: " + score);	
+				$('#pa').show();
+				$( ".mar-pipe" ).children().fadeOut();
+			}
+		
+
+		console.log(score);
+		 }, 1000);
+
+	};
+
+	$( ".mar-img" ).click(function() {
+		++score;
+ 		$( ".mar-pipe" ).children().fadeOut();
+ 		$("h2").html("Score: " + score);
+	});
+
+	$('#bttn').on('click', playGame);
+
+ 	$('#pa').on('click', playGame);
+		
+</script>
+
+</body>
+</html>
