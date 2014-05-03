@@ -32,7 +32,6 @@
 	    </div>
 	    <div class="collapse navbar-collapse">
 	      <ul class="nav navbar-nav">
-	        <li><a href="{{{ action('HomeController@showHome') }}}">Home</a></li>
           <li><a href="{{{ action('HomeController@showHome') }}}">Home</a></li>
 	        <li><a href="{{{ action('HomeController@showBlog') }}}">Blog</a></li>
 	        <li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
