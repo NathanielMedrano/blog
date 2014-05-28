@@ -79,11 +79,13 @@
    <div class="row" align="center">
   <div class="col-md-4"><strong>Work Experience:</strong></div>
   <div class="col-md-4" align="center">
+    <p>Web and Business Developer: Fantail</p>
     <p>Intern: <a href="http://netamericaalliance.com/">Net America Alliance</a></p>
     <p>Front Desk: <a href="http://stric.com/">South Texas Radiology Imaging Center</a></p>
 
   </div>
   <div class="col-md-4" align="center">
+    <p>June 2014 - Current</p>
     <p>May 2013-November 2013</p>
     <p>July 2009 - March 2012</p>
   </div>
