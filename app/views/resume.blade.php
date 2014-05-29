@@ -79,7 +79,7 @@
    <div class="row" align="center">
   <div class="col-md-4"><strong>Work Experience:</strong></div>
   <div class="col-md-4" align="center">
-    <p>Web and Business Developer: Fantail</p>
+    <p>Web and Business Developer: <a href="geekdom.com">Fantail</a></p>
     <p>Intern: <a href="http://netamericaalliance.com/">Net America Alliance</a></p>
     <p>Front Desk: <a href="http://stric.com/">South Texas Radiology Imaging Center</a></p>
 
