@@ -34,3 +34,8 @@
 	},
 	"minimum-stability": "stable"
 }
+{
+  "require": {
+    "stripe/stripe-php": "1.*"
+  }
+}
