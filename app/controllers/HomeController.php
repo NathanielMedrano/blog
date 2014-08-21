@@ -33,6 +33,7 @@ class HomeController extends BaseController {
 
 	public function showPayment()
 	{
+		require_once("stripe-php/lib/Stripe.php");
 		// Set your secret key: remember to change this to your live secret key in production
 		// See your keys here https://dashboard.stripe.com/account
 		Stripe::setApiKey("sk_live_iT2v6RcBsdcybroe5iAaKLs8");
