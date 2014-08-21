@@ -19,6 +19,8 @@
 
 Route::get('/portfolio', 'HomeController@showPortfolio');
 
+Route::get('/payment', 'HomeController@showPayment');
+
 Route::get('/create', 'HomeController@showNewBlog');
 
 Route::get('/resume', 'HomeController@showResume');
