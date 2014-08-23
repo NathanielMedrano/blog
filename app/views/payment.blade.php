@@ -1,20 +1,33 @@
 @extends('layouts.master')
-	
-	@section('sty')
-
+		
+		@section('sty')
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/magister.css">
 	<style type="text/css">
-		#twitter {
+	
+	#pic {
 
-			float: left;
-			margin-left: 5%;
-		}
+	visibility: hidden;
 
-		  #logform {
-     float: none;
-    margin: 0 auto;
-    top: 12%;
-  }
+	}
+
+	.text-center {
+
+	display: none;
+
+	}
+
+	#head {
+
+		padding-top: 7%;
+
+	}
+
+
 	</style>
+
+	@section('image')
+	@stop
 
     @section('content')
     
@@ -29,7 +42,7 @@
 	    data-amount="32500"
 	    data-name="NatsTech"
 	    data-description="theccgroup.com ($325.00)"
-	    data-image="/128x128.png">
+	    data-image="/img/natspic.jpg">
 	  </script>
 	</form>
 
