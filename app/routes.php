@@ -19,7 +19,10 @@
 
 Route::get('/portfolio', 'HomeController@showPortfolio');
 
-Route::get('/payment', 'HomeController@showPayment');
+Route::get('/payment', function()
+{
+	return View::make('payment');
+});
 
 Route::get('/create', 'HomeController@showNewBlog');
 
