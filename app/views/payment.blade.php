@@ -31,7 +31,7 @@
 
     @section('content')
     
-    <div class="content">
+    <div id="head" class="content">
     	<h1>Make A Payment</h1>
     </div>
 
