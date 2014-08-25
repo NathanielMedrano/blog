@@ -62,10 +62,10 @@
 			</div>
 			<div class="col-sm-4 col-sm-offset-2">
 				<div class="thumbnail">
-					<img src="/img/xs.jpg">
+					<img src="/img/tccg.jpg">
 					<div class="caption">
-						<h3>xs.dev</h3>
-						<p>Website for construction company Tech Stars INC.</p>
+						<h3>theccgroup.com</h3>
+						<p>Website for construction company The CC Group.</p>
 						<p><a href="https://github.com/NathanielMedrano/xs.dev" class="btn btn-primary" role="button">Code</a> <a href="#" class="btn btn-default" role="button">Site</a></p>
 					</div>
 				</div>
