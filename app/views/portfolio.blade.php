@@ -66,7 +66,7 @@
 					<div class="caption">
 						<h3>theccgroup.com</h3>
 						<p>Website for construction company The CC Group.</p>
-						<p><a href="https://github.com/NathanielMedrano/xs.dev" class="btn btn-primary" role="button">Code</a> <a href="#" class="btn btn-default" role="button">Site</a></p>
+						<p><a href="https://github.com/NathanielMedrano/xs.dev" class="btn btn-primary" role="button">Code</a> <a href="http://theccgroup.com/" class="btn btn-default" role="button">Site</a></p>
 					</div>
 				</div>
 			</div>
